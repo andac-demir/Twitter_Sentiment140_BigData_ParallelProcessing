@@ -37,10 +37,10 @@ python train_model.py
 
 |   Method   |  Validation ROC-AUC  | Test ROC-AUC  |
 | ---------- | -------------------- | ------------- |
-|  TFIDF LR  | Content Cell         | Content Cell  |
-| BIGRAM LR  | Content Cell         | Content Cell  |
-| TRIGRAM LR | Content Cell         | Content Cell  |
-|  U+B+T LR  | Content Cell         | Content Cell  |
+|  TFIDF LR  | 0.8576         | 0.8565  |
+| BIGRAM LR  | 0.8174         | 0.8174  |
+| TRIGRAM LR | 0.7278         | 0.7275  |
+|  U+B+T LR  | 0.8821         | 0.8814  |
 
 ## References
 1. Go, A., Bhayani, R., and Huang, L. Twitter sentiment classiﬁcation using distant supervision. CS224N Project Report, Stanford, 1(12):2009, 2009. 
