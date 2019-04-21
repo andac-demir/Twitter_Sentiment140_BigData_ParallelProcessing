@@ -45,6 +45,6 @@ python train_model.py
 ## References
 1. Go, A., Bhayani, R., and Huang, L. Twitter sentiment classiﬁcation using distant supervision. CS224N Project Report, Stanford, 1(12):2009, 2009. 
 
-2. Kim, R. Another twitter sentiment analysis with pythonŁŁpart 5 (tﬁdf vectorizer, model comparison, lexical approach), 2018. 
+2. Kim, R. Another twitter sentiment analysis with pythonpart 5 (tﬁdf vectorizer, model comparison, lexical approach), 2018. 
 
 3. Press, S.J. and Wilson, S. Choosing between logistic regression and discriminant analysis. Journal of the American Statistical Association, 73(364):699–705, 1978.
