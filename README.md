@@ -4,54 +4,9 @@ We implement two classiﬁers based on a logistic regression model to decide whe
 
 We worked with Spark’s Dataframe as data structure in this project and used PySpark MLlib’s Pipeline which is an abstraction speciﬁed as a sequence of stages. These stages are run in order and the input DataFrame is transformed as it passes through each stage: tokenizing, extracting feature vectors by HashingTF, and scaling feature vectors by the TFIDF scores. For classsification of the tweet sentiment, we fit the scaled features in a logistic regression model at the end.
 
-/***
-\begin{table}[]
-\caption{Classification accuracies for TFIDF logistic regression, bigram logistic regression, trigram logistic regression and unigram+bigram+trigram logistic regression.}
-\label{sample-table}
-\vskip 0.15in
-\begin{center}
-\begin{small}
-\begin{sc}
-\begin{tabular}{lcccr}
-\toprule
-Method & Validation Accuracy & Test Accuracy \\
-\midrule
-tfidf lr  & 0.7883 & 0.7880 \\
-bigram lr & 0.7391 & 0.7398 \\
-trigram lr& 0.6610 & 0.6617 \\
-u+b+t lr  & 0.8079 & 0.8814 \\
+## References
+Go, A., Bhayani, R., and Huang, L. Twitter sentiment classiﬁcation using distant supervision. CS224N Project Report, Stanford, 1(12):2009, 2009. 
 
-\bottomrule
-\end{tabular}
-\end{sc}
-\end{small}
-\end{center}
-\vskip -0.1in
-\end{table}
-***/
+Kim, R. Another twitter sentiment analysis with pythonŁŁpart 5 (tﬁdf vectorizer, model comparison, lexical approach), 2018. 
 
-/***
-\begin{table}[t]
-\caption{ROC-AUC scores for TFIDF logistic regression, bigram logistic regression, trigram logistic regression and unigram+bigram+trigram logistic regression.}
-\label{sample-table}
-\vskip 0.15in
-\begin{center}
-\begin{small}
-\begin{sc}
-\begin{tabular}{lcccr}
-\toprule
-Method & Validation ROC-AUC & Test ROC-AUC \\
-\midrule
-tfidf lr  & 0.8576 & 0.8565 \\
-bigram lr & 0.8174 & 0.8174 \\
-trigram lr& 0.7278 & 0.7275 \\
-u+b+t lr  & 0.8821 & 0.8814 \\
-
-\bottomrule
-\end{tabular}
-\end{sc}
-\end{small}
-\end{center}
-\vskip -0.1in
-\end{table}
-***/
+Press, S.J. and Wilson, S. Choosing between logistic regression and discriminant analysis. Journal of the American Statistical Association, 73(364):699–705, 1978.
