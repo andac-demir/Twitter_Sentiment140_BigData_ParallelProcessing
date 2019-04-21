@@ -25,6 +25,21 @@ python train_model.py
 
 --classifier, type=int, default=0, help='use tfidf hashing if 0, otherwise n-grams'
 
+## Results
+/***
+| __Animals__ | __Sports__ | __Fruits__ |
+|-------------|------------|------------|
+| Cat         | Soccer     | Apple      |
+| Dog         | Basketball | Orange     |
+***/
+
+/***
+| __Animals__ | __Sports__ | __Fruits__ |
+|-------------|------------|------------|
+| Cat         | Soccer     | Apple      |
+| Dog         | Basketball | Orange     |
+***/
+
 ## References
 1. Go, A., Bhayani, R., and Huang, L. Twitter sentiment classiﬁcation using distant supervision. CS224N Project Report, Stanford, 1(12):2009, 2009. 
 
