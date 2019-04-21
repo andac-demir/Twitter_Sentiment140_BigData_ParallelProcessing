@@ -29,10 +29,10 @@ python train_model.py
 
 |   Method   |  Validation Accuracy | Test Accuracy |
 | ---------- | -------------------- | ------------- |
-|  TFIDF LR  | 0.7883         | 0.7880  |
-| BIGRAM LR  | 0.7391         | 0.7398  |
-| TRIGRAM LR | 0.6610         | 0.6617  |
-|  U+B+T LR  | 0.8079         | 0.8814  |
+|  TFIDF LR  |        0.7883        |     0.7880    |
+| BIGRAM LR  |        0.7391        |     0.7398    |
+| TRIGRAM LR |        0.6610        |     0.6617    |
+|  U+B+T LR  |        0.8079        |     0.8814    |
 
 
 |   Method   |  Validation ROC-AUC  | Test ROC-AUC  |
