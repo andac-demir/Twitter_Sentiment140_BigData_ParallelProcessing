@@ -14,7 +14,7 @@ First you must parse and clean the dataset with:
 python preprocessing.py
 ```
 
-Then fit the extract, scale and fit the features in a logistic model with:
+Then extract, scale and fit the fixed size feature vectors in a logistic model with:
 
 ```
 python train_model.py
