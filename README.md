@@ -1,4 +1,4 @@
-# Opinion Mining and Sentiment Analysis Classification using Twitter Sentiment140 Dataset 
+# Opinion Mining and Sentiment Analysis Classification using Twitter Sentiment140 Dataset and PySpark MLlib 
 
 We implement two classiﬁers based on a logistic regression model to decide whether the sentiment in a tweet is positive or negative. The methods applied in this paper constitute of (i) converting the textual data to a numeric form using Term Frequency (TF) hashing to generate feature vectors and Inverse Document Frequency (IDF) to scale the feature vector to reduce the weights of words that appear often in tweets and not affect the sentiment classiﬁcation (ii) tokenizing the textual data into consecutive sequences of words, called n-grams, and then ﬁtting the features (extracted and scaled the same way as described in (i) and then assembled together) from the unigrams, bigrams and trigrams into a logistic regression model. We compare the computational performance and accuracy on validation and test sets for each method.
 
@@ -10,20 +10,20 @@ You can download the Sentiment140 dataset [here](http://help.sentiment140.com/fo
 ## Running
 First you must parse and clean the dataset with:
 
-'''
+```
 python preprocessing.py
-'''
+```
 
 Then fit the extract, scale and fit the features in a logistic model with:
 
-'''
+```
 python train_model.py
-'''
+```
 
 ### Arguments
 --ngrams, type=int, default=3, help='n-grams for feature extraction'
 
---classifier', type=int, default=0, help='use tfidf hashing if 0, otherwise n-grams'
+--classifier, type=int, default=0, help='use tfidf hashing if 0, otherwise n-grams'
 
 ## References
 1. Go, A., Bhayani, R., and Huang, L. Twitter sentiment classiﬁcation using distant supervision. CS224N Project Report, Stanford, 1(12):2009, 2009. 
