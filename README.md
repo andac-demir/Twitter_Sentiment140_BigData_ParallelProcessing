@@ -5,7 +5,20 @@ We implement two classiﬁers based on a logistic regression model to decide whe
 We worked with Spark’s Dataframe as data structure in this project and used PySpark MLlib’s Pipeline which is an abstraction speciﬁed as a sequence of stages. These stages are run in order and the input DataFrame is transformed as it passes through each stage: tokenizing, extracting feature vectors by HashingTF, and scaling feature vectors by the TFIDF scores. For classsification of the tweet sentiment, we fit the scaled features in a logistic regression model at the end.
 
 ## Dataset
-You can download the Sentiment140 dataset [here](http://help.sentiment140.com/for-students)
+You can download the Sentiment140 dataset [here](http://help.sentiment140.com/for-students).
+
+## Running
+First you must parse and clean the dataset with:
+
+python preprocessing.py
+
+Then fit the extract, scale and fit the features in a logistic model with:
+
+python train_model.py
+
+###Arguments
+--ngrams, type=int, default=3, help='n-grams for feature extraction'
+--classifier', type=int, default=0, help='use tfidf hashing if 0, otherwise n-grams'
 
 ## References
 1. Go, A., Bhayani, R., and Huang, L. Twitter sentiment classiﬁcation using distant supervision. CS224N Project Report, Stanford, 1(12):2009, 2009. 
