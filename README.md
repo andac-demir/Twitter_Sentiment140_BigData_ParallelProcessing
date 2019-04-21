@@ -9,15 +9,20 @@ You can download the Sentiment140 dataset [here](http://help.sentiment140.com/fo
 
 ## Running
 First you must parse and clean the dataset with:
+
 '''
 python preprocessing.py
 '''
+
 Then fit the extract, scale and fit the features in a logistic model with:
+
 '''
 python train_model.py
 '''
+
 ### Arguments
 --ngrams, type=int, default=3, help='n-grams for feature extraction'
+
 --classifier', type=int, default=0, help='use tfidf hashing if 0, otherwise n-grams'
 
 ## References
