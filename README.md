@@ -4,6 +4,7 @@ We implement two classiﬁers based on a logistic regression model to decide whe
 
 We worked with Spark’s Dataframe as data structure in this project and used PySpark MLlib’s Pipeline which is an abstraction speciﬁed as a sequence of stages. These stages are run in order and the input DataFrame is transformed as it passes through each stage: tokenizing, extracting feature vectors by HashingTF, and scaling feature vectors by the TFIDF scores. For classsification of the tweet sentiment, we fit the scaled features in a logistic regression model at the end.
 
+/***
 \begin{table}[t]
 \caption{Classification accuracies for TFIDF logistic regression, bigram logistic regression, trigram logistic regression and unigram+bigram+trigram logistic regression.}
 \label{sample-table}
@@ -27,7 +28,9 @@ u+b+t lr  & 0.8079 & 0.8814 \\
 \end{center}
 \vskip -0.1in
 \end{table}
+***/
 
+/***
 \begin{table}[t]
 \caption{ROC-AUC scores for TFIDF logistic regression, bigram logistic regression, trigram logistic regression and unigram+bigram+trigram logistic regression.}
 \label{sample-table}
@@ -51,3 +54,4 @@ u+b+t lr  & 0.8821 & 0.8814 \\
 \end{center}
 \vskip -0.1in
 \end{table}
+***/
