@@ -27,10 +27,12 @@ python train_model.py
 
 ## Results
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+|   Method   |  Validation Accuracy | Test Accuracy |
+| ---------- | -------------------- | ------------- |
+|  TFIDF LR  | Content Cell         | Content Cell  |
+| BIGRAM LR  | Content Cell         | Content Cell  |
+| TRIGRAM LR | Content Cell         | Content Cell  |
+|  U+B+T LR  | Content Cell         | Content Cell  |
 
 ## References
 1. Go, A., Bhayani, R., and Huang, L. Twitter sentiment classiﬁcation using distant supervision. CS224N Project Report, Stanford, 1(12):2009, 2009. 
