@@ -20,7 +20,7 @@ Then extract, scale and fit the fixed size feature vectors in a logistic model w
 python train_model.py
 ```
 
-### Arguments
+### Arguments for Training
 --ngrams, type=int, default=3, help='n-grams for feature extraction'
 
 --classifier, type=int, default=0, help='use tfidf hashing if 0, otherwise n-grams'
